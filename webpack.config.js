@@ -11,6 +11,10 @@ const config = {
       {
         use: 'babel-loader',
         test: /\.js$/ // a regular expression to apply babel to any files ending with .js
+      },
+      {
+        use: ['style-loader', 'css-loader'],
+        test: /\.css$/
       }
     ]
   }
